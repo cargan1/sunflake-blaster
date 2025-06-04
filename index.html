@@ -26,7 +26,7 @@
             width: 800px;
             height: 600px;
             pointer-events: none;
-            z-index: 2;
+            z-index: 2000;
             overflow: hidden;
             left: 50%;
             top: 50%;
@@ -88,13 +88,14 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgb(23, 23, 23);
+            background: rgb(17, 28, 17,0.9);
             border: 2px solid #00ff00;
             padding: 20px;
             color: #00ff00;
             font-family: Arial;
             text-align: center;
             z-index: 1000;
+            filter: blur(.3px);
         }
 
         #leaderboardForm input {
@@ -104,6 +105,11 @@
             padding: 5px;
             margin: 5px;
             width: 200px;
+        }
+
+        #leaderboardForm input::placeholder {
+            color:#00ff00;
+            opacity: 1;
         }
 
         #leaderboardForm button {

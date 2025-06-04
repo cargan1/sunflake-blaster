@@ -825,7 +825,7 @@ async function displayLeaderboard() {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td style="padding: 5px 15px;">${index + 1}</td>
-                    <td style="padding: 5px 15px;">${scoreData.initials}</td>
+                    <td style="padding: 5px 15px;">${scoreData.name}</td>
                     <td style="padding: 5px 15px;">${scoreData.score}</td>
                 `;
                 leaderboardBody.appendChild(row);
