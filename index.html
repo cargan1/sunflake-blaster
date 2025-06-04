@@ -7,8 +7,8 @@
     <script>
         // Initialize Supabase client globally
         const supabaseClient = supabase.createClient(
-            'https://uxrbvduewoatvfngqdue.supabase.co',
-            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4cmJ2ZHVld29hdHZmbmdxZHVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQzMzkzNzgsImV4cCI6MjA0OTkxNTM3OH0.5UQFwFhqasHRQvd2Y9vYCkN-9LGZ3kld-JJ9DipnB8A'
+            'https://oybtmsoagcxcbrhufvgn.supabase.co',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95YnRtc29hZ2N4Y2JyaHVmdmduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMzA1MjQsImV4cCI6MjA2NDYwNjUyNH0.bNycAST-sS-Rd27jjz7keVrV1SjoUR0JvRtOMLETiCA'
         );
     </script>
     <style>
@@ -137,7 +137,7 @@
     <div id="leaderboardForm">
         <h2>New High Score!</h2>
         <p>Enter your details for the leaderboard:</p>
-        <input type="text" id="initials" maxlength="3" placeholder="Enter 3 initials" /><br>
+        <input type="text" id="name" maxlength="12" placeholder="Enter your name" /><br>
         <input type="email" id="email" placeholder="Enter your email" /><br>
         <button onclick="submitScore()">Submit Score</button>
     </div>
@@ -147,7 +147,7 @@
             <thead>
                 <tr>
                     <th style="padding: 5px 15px; border-bottom: 1px solid #00ff00;">Rank</th>
-                    <th style="padding: 5px 15px; border-bottom: 1px solid #00ff00;">Initials</th>
+                    <th style="padding: 5px 15px; border-bottom: 1px solid #00ff00;">Username</th>
                     <th style="padding: 5px 15px; border-bottom: 1px solid #00ff00;">Score</th>
                 </tr>
             </thead>

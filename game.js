@@ -743,11 +743,11 @@ function showLeaderboardForm() {
 
 // Update submitScore function
 async function submitScore() {
-    const initials = document.getElementById('initials').value.toUpperCase();
+    const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
-    if (initials.length !== 3 || !email.includes('@')) {
-        alert('Please enter valid 3 initials and email address');
+    if (name.length > 12 || !email.includes('@')) {
+        alert('Please enter max valid 12 characters and email address');
         return;
     }
 
@@ -763,7 +763,7 @@ async function submitScore() {
             .from('leaderboard')
             .insert([
                 {
-                    initials: initials,
+                    name: name,
                     email: email,
                     score: score
                 }
